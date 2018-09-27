@@ -2,7 +2,7 @@ require 'pry'
 
 
 class Owner
-  attr_accessor :pets, :name 
+  attr_accessor :pets, :name, :mood 
   attr_reader :species 
  
   @@all = []
@@ -47,7 +47,7 @@ class Owner
     pets[:dogs] <<  new_dog
   end 
   
-  def walk_dogs(dog)
+  def walk_dogs
    dog.mood = "happy"
   end 
   
