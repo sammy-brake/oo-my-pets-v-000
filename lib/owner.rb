@@ -30,7 +30,7 @@ class Owner
   end 
   
   def buy_fish(name)
-    pets["fishes"][0] << name 
+    pets[:fishes] << name 
   end 
   
 end
